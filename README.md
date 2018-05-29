@@ -4,15 +4,9 @@ This is the code for the Visual Studio Code Extension what the kaze-cli uses.
 
 The current version of **kaze-vscode-extension** code has some software dependencies that can not be currently resolved due to restricted access. For this reason, in this version you cannot build **kaze-vscode-extension** from the source code. Nevertheless, in the **dist** folder you will have access to two packaged distributions of **kaze-vscode-extension** ready to be used, one for Linux systems and another for Mac systems. Enjoy yourself!
 
-### Documentation
-
-In this [link]() you can find info about how to use kaze-vscode-extension tool.
-
-# ManiGen
+## Documentation
 
 Graphic generation of manifests.
-
-### Requirements:
 
 | name | version |
 |------|---------|
