@@ -1,0 +1,358 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    min-width:900px
+    
+}
+
+p{ 
+     text-align: center; 
+     overflow: overlay;
+     position: relative;
+}
+
+.alertpan{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.alertModal{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    position: absolute;
+    width: 50%;
+    min-width: 960px;
+    z-index: 1501;
+}
+.alertNoty{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    z-index: 1505;
+    position: absolute;
+    width: 35%;
+    min-width: 672px;
+}
+
+.custumeFade{
+    position: absolute;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgb(248, 248, 248)
+}
+
+div.listElem{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.rowText{
+    margin-top: 5px;
+}
+
+div.action-btn{
+    width: 100%;
+    text-align: right;
+    margin-top: 3px;
+}
+
+li div.row{
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.btn-private{
+ font-size: 25px;
+ margin-left: 4px;
+}
+
+.ico-private{
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.yellow{
+    color:  #f0ad4e;
+    border-color: #eea236;
+}
+
+.red{
+    color:  #d9534f;
+    border-color: #d43f3a;
+}
+
+.blue{
+    color: #286090;
+    border-color: #204d74;
+}
+
+.addNewOnTop{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: solid;
+    border-left-style: hidden;
+    border-bottom-color: #ddd;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-width: inherit;
+    margin-bottom: 5px;
+}
+
+/* #ec971f */
+#control-panel{
+ margin-top: 20px;
+ margin-bottom: 20px;
+ min-height: 93vh;
+}
+
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+#control{
+    width: 400px;
+    height: 100vh;
+    float: right;
+    overflow-y : scroll;
+   
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height: 30px;   /* Height of the footer */
+   background:#337ab7;
+   color: white;
+}
+
+.footext{
+    margin-top: 5px;
+    margin-left: 100px;  
+    float: left;
+}
+
+
+a.menu-title{
+    font-size: large;
+}
+
+.menuAddr{
+ margin-right: 13px;
+ font-size: 25px;
+}
+
+label.control-label{
+    font-size: small;
+}
+
+button.btn-right{
+    float: right;
+}
+
+.modalxs{
+    min-width: 600px  !important;
+}
+.modalxl{
+    min-width: 998px  !important;
+}
+
+.contentxs{
+    width: 40%;
+    min-width: 600px  !important;
+}
+.contentxl{
+    width: 40%;
+    min-width: 998px  !important;
+}
+
+/*  .modal-content{
+    min-width: 998px  !important;
+} 
+
+ */
+div.hlimited{
+
+    max-height: 50vh;
+    overflow-y : scroll;
+}
+
+#toolbox{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 1em;
+    z-index: 5;
+}
+
+#toolbox input{
+    width: 30px;
+    opacity: 0.4;
+}
+#toolbox input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#hidden-file-upload{
+    display: none;
+}
+
+
+.conceptG text{
+    pointer-events: none;
+}
+
+marker{
+    fill: #333;
+}
+
+g.conceptG circle{
+    fill: #F6FBFF;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+g.conceptG:hover circle{
+    fill: rgb(200, 238, 241);
+}
+
+g.selected circle{
+    fill: rgb(250, 232, 255);
+}
+g.selected:hover circle{
+    fill: rgb(250, 232, 255);
+}
+
+g.conceptG rect{
+    fill: #F6FBFF;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+g.conceptG:hover rect{
+    fill: rgb(200, 238, 241);
+}
+
+g.conceptG.selected rect.node{
+    stroke: #AA4422 !important;
+    stroke-width: 4px !important;
+}
+g.selected:hover rect{
+    fill: rgb(250, 232, 255);
+}
+
+
+g.ch-tag rect{
+    fill: #F6FBFF;
+    stroke: #000000 !important;
+    stroke-width: 2px;
+}
+
+
+
+g.connectorLb rect{
+    fill: #77BB2F;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+g.connectorFc rect{
+    fill: #FF7777;
+    stroke: #333;
+    stroke-width: 2px;
+}
+g.connectorPs rect{
+    fill: #7777FF;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+g.component rect{
+    fill: #FFFFFF;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+
+
+g.conceptG-con circle{
+    fill: #F6FBFF;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+g.conceptG-con rect{
+    fill: #289B2F;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+g.conceptG-con:hover rect{
+    fill: rgb(200, 238, 241);
+}
+
+g.selected-con rect{
+    fill: rgb(250, 232, 255);
+}
+g.selected-con:hover rect{
+    fill: rgb(250, 232, 255);
+}
+
+
+path.link {
+    fill: none;
+    stroke: #333;
+    stroke-width: 6px;
+    cursor: default;
+}
+
+path.link:hover{
+    stroke: rgb(94, 196, 204);
+}
+
+g.connect-node circle{
+    fill: #BEFFFF;
+}
+
+g.connect-node rect{
+    fill: #BEFFFF;
+}
+
+
+path.link.hidden{
+    stroke-width: 0;
+}
+
+path.link.selected {
+    stroke: rgb(229, 172, 247);
+}
+
+
+g.ch-hidden{
+    display: none;
+}
+
+g.ch-tag rect{
+      fill: rgb(0,0,0) !important;
+}
+

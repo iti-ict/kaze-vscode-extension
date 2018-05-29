@@ -1,0 +1,68 @@
+{
+  "name": "manigen",
+  "displayName": "manigen",
+  "description": "",
+  "version": "0.3.7",
+  "publisher": "yuyat",
+  "engines": {
+    "vscode": "^1.14.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.manifest"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.manifest",
+        "title": "SaaSDK Manifest Editor"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --watch --open",
+    "build": "cross-env NODE_ENV=production webpack --watch  --hide-modules",
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.40",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.0.0",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "mocha": "^2.3.3",
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  },
+  "dependencies": {
+    "edit-json-file": "^1.0.6",
+    "express": "^4.16.2",
+    "file-url": "^2.0.2",
+    "node-uuid": "^1.4.8",
+    "socket.io": "^2.0.3",
+    "vue": "^2.2.1",
+    "vue-i18n": "^7.2.0",
+    "vue-resource": "^1.3.4",
+    "vue-select": "github:sagalbot/vue-select",
+    "vuex": "^2.4.0"
+  },
+  "browser": {
+    "vue": "vue/dist/vue.common.js"
+  }
+}

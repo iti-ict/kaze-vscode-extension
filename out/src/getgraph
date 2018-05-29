@@ -1,0 +1,3828 @@
+{
+    "graph": {
+        "nodes": [
+            {
+                "title": "acs",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 0,
+                "channels": [
+                    {
+                        "title": "rep_acs",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rep_pubsub",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rep_rm",
+                        "id": 2,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_acs2dssql",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "sub_dssql",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1070,
+                "y": 700
+            },
+            {
+                "title": "cnm",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 1,
+                "channels": [
+                    {
+                        "title": "rep_cnm",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "acs",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "sql",
+                        "id": 2,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "api_dkms",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1770,
+                "y": 600
+            },
+            {
+                "title": "dkms",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 2,
+                "channels": [
+                    {
+                        "title": "api",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "dssql",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "event_notification_mpe_md",
+                        "id": 2,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "event_notification_opp",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "event_notification_mail",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "event_notification_poma",
+                        "id": 5,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1070,
+                "y": 700
+            },
+            {
+                "title": "dssql",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 3,
+                "channels": [
+                    {
+                        "title": "rep_dssql2fe_ops",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rep_dssql2acs_ops",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rep_dssql_sql",
+                        "id": 2,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "pub_dssql",
+                        "id": 3,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_dssql2mdbw",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_mariadbwrapper",
+                        "id": 5,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "sub_mariadbwrapper",
+                        "id": 6,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1070,
+                "y": 300
+            },
+            {
+                "title": "jobs",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 4,
+                "channels": [
+                    {
+                        "title": "jobsService",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "jobNotificationSend",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "taskRequest",
+                        "id": 2,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "taskNotificationReceive",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "taskExecutorEndPoint",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1770,
+                "y": 200
+            },
+            {
+                "title": "mariadbwrapper",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 5,
+                "channels": [
+                    {
+                        "title": "rep_mdbw2dssql",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rep_mariadbwrapper",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "pub_mariadbwrapper",
+                        "id": 2,
+                        "type": "provided",
+                        "order": 0
+                    }
+                ],
+                "x": 0,
+                "y": 0
+            },
+            {
+                "title": "mpe_aa",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 6,
+                "channels": [
+                    {
+                        "title": "detectionresults",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "adaptation",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "cotassessments",
+                        "id": 2,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2470,
+                "y": 300
+            },
+            {
+                "title": "mpe_md",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 7,
+                "channels": [
+                    {
+                        "title": "eventnotification",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "detectionresults",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "query",
+                        "id": 2,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1770,
+                "y": 500
+            },
+            {
+                "title": "opc",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 8,
+                "channels": [
+                    {
+                        "title": "rep_optimization",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rep_opc2poma",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_opc2acs",
+                        "id": 2,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_storage",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_solvers",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_pomamanager",
+                        "id": 5,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1770,
+                "y": 300
+            },
+            {
+                "title": "opp",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 9,
+                "channels": [
+                    {
+                        "title": "orchestration",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rulenotification",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "notifications",
+                        "id": 2,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "actions",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "optimisation",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "optimisationplan",
+                        "id": 5,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "tpmRequest",
+                        "id": 6,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "events",
+                        "id": 7,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1770,
+                "y": 600
+            },
+            {
+                "title": "pomam",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 10,
+                "channels": [
+                    {
+                        "title": "notifications",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rep_pomaApi",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rep_pomaAdmin",
+                        "id": 2,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "events",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "jobsNotifications",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_jobsExecutor",
+                        "id": 5,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_storage",
+                        "id": 6,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_poma2acs",
+                        "id": 7,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "sub_dssql",
+                        "id": 8,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_poma2opc",
+                        "id": 9,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1070,
+                "y": 600
+            },
+            {
+                "title": "pubsub",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 11,
+                "channels": [
+                    {
+                        "title": "queue",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "confPS",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "hubData",
+                        "id": 2,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_acs_pubsub",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 370,
+                "y": 600
+            },
+            {
+                "title": "rm",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 12,
+                "channels": [
+                    {
+                        "title": "sendConfig",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rmAdmin",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "hubData",
+                        "id": 2,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "storage",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "confRM",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "rmNotification",
+                        "id": 5,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 370,
+                "y": 700
+            },
+            {
+                "title": "solvermanager",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 13,
+                "channels": [
+                    {
+                        "title": "solvermanagerservice",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "optAdmin",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "storage",
+                        "id": 2,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_solvermanager2acs",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "sub_dssql",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1070,
+                "y": 500
+            },
+            {
+                "title": "taskexecutor",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 14,
+                "channels": [
+                    {
+                        "title": "taskService",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "taskNotificationSend",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "jobsEndPoint",
+                        "id": 2,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "maria_wrapper",
+                        "id": 3,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "sub_dssql",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2470,
+                "y": 200
+            },
+            {
+                "title": "tpm",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 15,
+                "channels": [
+                    {
+                        "title": "tpmAdmin",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "tpmRequest",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "tpmPush",
+                        "id": 2,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 0,
+                "y": 0
+            },
+            {
+                "title": "ucp",
+                "type": "component",
+                "cat": "component",
+                "h": 0,
+                "w": 0,
+                "id": 16,
+                "channels": [
+                    {
+                        "title": "service",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "assessment",
+                        "id": 1,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "workflowActions",
+                        "id": 2,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "rmNotification",
+                        "id": 3,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "acs",
+                        "id": 4,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "cotOrchestration",
+                        "id": 5,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "tpmAdmin",
+                        "id": 6,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "rmAdmin",
+                        "id": 7,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_fe2cnm",
+                        "id": 8,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_fe2sm",
+                        "id": 9,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_fe2pm",
+                        "id": 10,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "req_fe2opc",
+                        "id": 11,
+                        "type": "depended",
+                        "order": 0
+                    },
+                    {
+                        "title": "send_notifications",
+                        "id": 12,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1070,
+                "y": 700
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 17,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2120,
+                "y": 500
+            },
+            {
+                "title": "pubsub",
+                "type": "connector",
+                "cat": "pubsub",
+                "h": 0,
+                "w": 0,
+                "id": 18,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 900
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 19,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1000
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 20,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1100
+            },
+            {
+                "title": "pubsub",
+                "type": "connector",
+                "cat": "pubsub",
+                "h": 0,
+                "w": 0,
+                "id": 21,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1200
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 22,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1300
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 23,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1400
+            },
+            {
+                "title": "pubsub",
+                "type": "connector",
+                "cat": "pubsub",
+                "h": 0,
+                "w": 0,
+                "id": 24,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1500
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 25,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1600
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 26,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1700
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 27,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2120,
+                "y": 600
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 28,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1800
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 29,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2120,
+                "y": 700
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 30,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 1900
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 31,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 2000
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 32,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 2100
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 33,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 720,
+                "y": 2700
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 34,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 2200
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 35,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 720,
+                "y": 2800
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 36,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 720,
+                "y": 2900
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 37,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 720,
+                "y": 3000
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 38,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 720,
+                "y": 3100
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 39,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 2300
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 40,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 2400
+            },
+            {
+                "title": "pubsub",
+                "type": "connector",
+                "cat": "pubsub",
+                "h": 0,
+                "w": 0,
+                "id": 41,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2120,
+                "y": 800
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 42,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 720,
+                "y": 3200
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 43,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2120,
+                "y": 900
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 44,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 2500
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 45,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2820,
+                "y": 200
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 46,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 2600
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 47,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2120,
+                "y": 1000
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 48,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 2700
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 49,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 720,
+                "y": 3300
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 50,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 2120,
+                "y": 1100
+            },
+            {
+                "title": "loadbalancer",
+                "type": "connector",
+                "cat": "loadbalancer",
+                "h": 0,
+                "w": 0,
+                "id": 51,
+                "channels": [
+                    {
+                        "title": "provided",
+                        "id": 0,
+                        "type": "provided",
+                        "order": 0
+                    },
+                    {
+                        "title": "depended",
+                        "id": 1,
+                        "type": "depended",
+                        "order": 0
+                    }
+                ],
+                "x": 1420,
+                "y": 2800
+            }
+        ],
+        "edges": [
+            {
+                "id": "",
+                "target": 17,
+                "source": 4,
+                "connDest": 0,
+                "connOr": 2
+            },
+            {
+                "id": "",
+                "source": 17,
+                "target": 14,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 18,
+                "source": 10,
+                "connDest": 0,
+                "connOr": 4
+            },
+            {
+                "id": "",
+                "source": 18,
+                "target": 4,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 19,
+                "source": 3,
+                "connDest": 0,
+                "connOr": 4
+            },
+            {
+                "id": "",
+                "target": 19,
+                "source": 14,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "source": 19,
+                "target": 5,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 20,
+                "source": 3,
+                "connDest": 0,
+                "connOr": 5
+            },
+            {
+                "id": "",
+                "source": 20,
+                "target": 5,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 21,
+                "source": 3,
+                "connDest": 0,
+                "connOr": 6
+            },
+            {
+                "id": "",
+                "source": 21,
+                "target": 5,
+                "connOr": 1,
+                "connDest": 2
+            },
+            {
+                "id": "",
+                "target": 22,
+                "source": 2,
+                "connDest": 0,
+                "connOr": 1
+            },
+            {
+                "id": "",
+                "target": 22,
+                "source": 8,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "target": 22,
+                "source": 10,
+                "connDest": 0,
+                "connOr": 6
+            },
+            {
+                "id": "",
+                "source": 22,
+                "target": 3,
+                "connOr": 1,
+                "connDest": 2
+            },
+            {
+                "id": "",
+                "target": 23,
+                "source": 0,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "source": 23,
+                "target": 3,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 24,
+                "source": 0,
+                "connDest": 0,
+                "connOr": 4
+            },
+            {
+                "id": "",
+                "target": 24,
+                "source": 14,
+                "connDest": 0,
+                "connOr": 4
+            },
+            {
+                "id": "",
+                "source": 24,
+                "target": 3,
+                "connOr": 1,
+                "connDest": 3
+            },
+            {
+                "id": "",
+                "target": 25,
+                "source": 1,
+                "connDest": 0,
+                "connOr": 2
+            },
+            {
+                "id": "",
+                "target": 25,
+                "source": 13,
+                "connDest": 0,
+                "connOr": 2
+            },
+            {
+                "id": "",
+                "source": 25,
+                "target": 3,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 26,
+                "source": 1,
+                "connDest": 0,
+                "connOr": 1
+            },
+            {
+                "id": "",
+                "target": 26,
+                "source": 8,
+                "connDest": 0,
+                "connOr": 2
+            },
+            {
+                "id": "",
+                "target": 26,
+                "source": 16,
+                "connDest": 0,
+                "connOr": 4
+            },
+            {
+                "id": "",
+                "target": 26,
+                "source": 13,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "target": 26,
+                "source": 10,
+                "connDest": 0,
+                "connOr": 7
+            },
+            {
+                "id": "",
+                "source": 26,
+                "target": 0,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 27,
+                "source": 8,
+                "connDest": 0,
+                "connOr": 4
+            },
+            {
+                "id": "",
+                "source": 27,
+                "target": 13,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 28,
+                "source": 16,
+                "connDest": 0,
+                "connOr": 9
+            },
+            {
+                "id": "",
+                "source": 28,
+                "target": 13,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 29,
+                "source": 8,
+                "connDest": 0,
+                "connOr": 5
+            },
+            {
+                "id": "",
+                "source": 29,
+                "target": 10,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 30,
+                "source": 16,
+                "connDest": 0,
+                "connOr": 10
+            },
+            {
+                "id": "",
+                "source": 30,
+                "target": 10,
+                "connOr": 1,
+                "connDest": 2
+            },
+            {
+                "id": "",
+                "target": 31,
+                "source": 16,
+                "connDest": 0,
+                "connOr": 11
+            },
+            {
+                "id": "",
+                "source": 31,
+                "target": 8,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 32,
+                "source": 10,
+                "connDest": 0,
+                "connOr": 5
+            },
+            {
+                "id": "",
+                "source": 32,
+                "target": 4,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "source": 33,
+                "target": 16,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 34,
+                "source": 16,
+                "connDest": 0,
+                "connOr": 7
+            },
+            {
+                "id": "",
+                "source": 34,
+                "target": 12,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 35,
+                "source": 11,
+                "connDest": 0,
+                "connOr": 2
+            },
+            {
+                "id": "",
+                "source": 35,
+                "target": 12,
+                "connOr": 1,
+                "connDest": 2
+            },
+            {
+                "id": "",
+                "target": 36,
+                "source": 12,
+                "connDest": 0,
+                "connOr": 4
+            },
+            {
+                "id": "",
+                "source": 36,
+                "target": 11,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 37,
+                "source": 12,
+                "connDest": 0,
+                "connOr": 5
+            },
+            {
+                "id": "",
+                "source": 37,
+                "target": 16,
+                "connOr": 1,
+                "connDest": 3
+            },
+            {
+                "id": "",
+                "source": 38,
+                "target": 11,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 39,
+                "source": 16,
+                "connDest": 0,
+                "connOr": 6
+            },
+            {
+                "id": "",
+                "source": 39,
+                "target": 15,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 40,
+                "source": 10,
+                "connDest": 0,
+                "connOr": 9
+            },
+            {
+                "id": "",
+                "source": 40,
+                "target": 8,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 41,
+                "source": 4,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "source": 41,
+                "target": 14,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 42,
+                "source": 1,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "target": 42,
+                "source": 12,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "target": 42,
+                "source": 7,
+                "connDest": 0,
+                "connOr": 2
+            },
+            {
+                "id": "",
+                "source": 42,
+                "target": 2,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 43,
+                "source": 9,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "source": 43,
+                "target": 16,
+                "connOr": 1,
+                "connDest": 2
+            },
+            {
+                "id": "",
+                "target": 44,
+                "source": 16,
+                "connDest": 0,
+                "connOr": 5
+            },
+            {
+                "id": "",
+                "source": 44,
+                "target": 9,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 45,
+                "source": 6,
+                "connDest": 0,
+                "connOr": 2
+            },
+            {
+                "id": "",
+                "source": 45,
+                "target": 16,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 46,
+                "source": 2,
+                "connDest": 0,
+                "connOr": 2
+            },
+            {
+                "id": "",
+                "source": 46,
+                "target": 7,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 47,
+                "source": 7,
+                "connDest": 0,
+                "connOr": 1
+            },
+            {
+                "id": "",
+                "source": 47,
+                "target": 6,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 48,
+                "source": 16,
+                "connDest": 0,
+                "connOr": 8
+            },
+            {
+                "id": "",
+                "source": 48,
+                "target": 1,
+                "connOr": 1,
+                "connDest": 0
+            },
+            {
+                "id": "",
+                "target": 49,
+                "source": 11,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "source": 49,
+                "target": 0,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 50,
+                "source": 9,
+                "connDest": 0,
+                "connOr": 6
+            },
+            {
+                "id": "",
+                "source": 50,
+                "target": 15,
+                "connOr": 1,
+                "connDest": 1
+            },
+            {
+                "id": "",
+                "target": 51,
+                "source": 2,
+                "connDest": 0,
+                "connOr": 3
+            },
+            {
+                "id": "",
+                "source": 51,
+                "target": 9,
+                "connOr": 1,
+                "connDest": 1
+            }
+        ]
+    },
+    "manifests": {
+        "service": {
+            "spec": "http://eslap.cloud/manifest/service/1_0_0",
+            "name": "eslap://c2netproject/services/c2net/0_0_51",
+            "configuration": {
+                "resources": [
+                    {
+                        "name": "acs_cert_vol_disk",
+                        "type": "eslap://eslap.cloud/resource/volume/persistent/1_0_0"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "acs",
+                        "type": "eslap://eslap.cloud/parameter/json/1_0_0"
+                    },
+                    {
+                        "name": "dssql",
+                        "type": "eslap://eslap.cloud/parameter/json/1_0_0"
+                    },
+                    {
+                        "name": "mariadbwrapper",
+                        "type": "eslap://eslap.cloud/parameter/json/1_0_0"
+                    },
+                    {
+                        "name": "taskexecutor",
+                        "type": "eslap://eslap.cloud/parameter/json/1_0_0"
+                    },
+                    {
+                        "name": "solvermanager",
+                        "type": "eslap://eslap.cloud/parameter/json/1_0_0"
+                    },
+                    {
+                        "name": "ucp",
+                        "type": "eslap://eslap.cloud/parameter/json/1_0_0"
+                    }
+                ]
+            },
+            "roles": [
+                {
+                    "name": "acs",
+                    "component": "eslap://iti/components/acs/0_1_11",
+                    "resources": {
+                        "acs_cert_vol": "acs_cert_vol_disk"
+                    },
+                    "parameters": {}
+                },
+                {
+                    "name": "cnm",
+                    "component": "eslap://c2netproject/components/cnm/1_1_0"
+                },
+                {
+                    "name": "dkms",
+                    "component": "eslap://c2netproject/components/dkms/1_0_10"
+                },
+                {
+                    "name": "dssql",
+                    "component": "eslap://iti/components/dssql/0_1_23"
+                },
+                {
+                    "name": "jobs",
+                    "component": "eslap://c2netproject/components/jobs/0_0_9"
+                },
+                {
+                    "name": "mariadbwrapper",
+                    "component": "eslap://iti/components/mariadbwrapper/0_1_7"
+                },
+                {
+                    "name": "mpe_aa",
+                    "component": "eslap://linagora.c2netproject.eu/components/mpe_aa/1_0_1"
+                },
+                {
+                    "name": "mpe_md",
+                    "component": "eslap://linagora.c2netproject.eu/components/mpe_md/1_1_8"
+                },
+                {
+                    "name": "opc",
+                    "component": "eslap://c2netproject/components/opc/0_0_8"
+                },
+                {
+                    "name": "opp",
+                    "component": "eslap://linagora.c2netproject.eu/components/opp/1_2_1"
+                },
+                {
+                    "name": "pomam",
+                    "component": "eslap://c2netproject/components/pomam/0_0_18"
+                },
+                {
+                    "name": "pubsub",
+                    "component": "eslap://c2netproject/components/pubsub/0_0_13"
+                },
+                {
+                    "name": "rm",
+                    "component": "eslap://uninova.c2net/components/rm/1_3_7"
+                },
+                {
+                    "name": "solvermanager",
+                    "component": "eslap://c2netproject/components/solvermanager/0_0_15"
+                },
+                {
+                    "name": "taskexecutor",
+                    "component": "eslap://c2netproject/components/taskexecutor/0_0_16"
+                },
+                {
+                    "name": "tpm",
+                    "component": "eslap://c2netproject/components/tpm/1_0_5"
+                },
+                {
+                    "name": "ucp",
+                    "component": "eslap://c2netproject/components/ucp/1_3_15"
+                }
+            ],
+            "channels": {
+                "provides": [
+                    {
+                        "name": "portal",
+                        "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                        "protocol": "eslap://eslap.cloud/protocol/message/http/1_0_0"
+                    },
+                    {
+                        "name": "pubsub",
+                        "type": "eslap://eslap.cloud/channel/send/1_0_0",
+                        "protocol": "eslap://eslap.cloud/protocol/message/http/1_0_0"
+                    }
+                ],
+                "requires": [
+                    {
+                        "name": "patata_express",
+                        "type": "eslap://eslap.cloud/endpoint/duplex/1_0_0",
+                        "protocol": "eslap://eslap.cloud/protocol/message/http/1_0_0"
+                    }]
+            },
+            "connectors": [
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "jobs",
+                            "endpoint": "taskRequest"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "taskexecutor",
+                            "endpoint": "taskService"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/pubsub/1_0_0",
+                    "depended": [
+                        {
+                            "role": "pomam",
+                            "endpoint": "jobsNotifications"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "jobs",
+                            "endpoint": "jobNotificationSend"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "dssql",
+                            "endpoint": "req_dssql2mdbw"
+                        },
+                        {
+                            "role": "taskexecutor",
+                            "endpoint": "maria_wrapper"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "mariadbwrapper",
+                            "endpoint": "rep_mdbw2dssql"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "dssql",
+                            "endpoint": "req_mariadbwrapper"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "mariadbwrapper",
+                            "endpoint": "rep_mariadbwrapper"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/pubsub/1_0_0",
+                    "depended": [
+                        {
+                            "role": "dssql",
+                            "endpoint": "sub_mariadbwrapper"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "mariadbwrapper",
+                            "endpoint": "pub_mariadbwrapper"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "dkms",
+                            "endpoint": "dssql"
+                        },
+                        {
+                            "role": "opc",
+                            "endpoint": "req_storage"
+                        },
+                        {
+                            "role": "pomam",
+                            "endpoint": "req_storage"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "dssql",
+                            "endpoint": "rep_dssql_sql"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "acs",
+                            "endpoint": "req_acs2dssql"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "dssql",
+                            "endpoint": "rep_dssql2acs_ops"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/pubsub/1_0_0",
+                    "depended": [
+                        {
+                            "role": "acs",
+                            "endpoint": "sub_dssql"
+                        },
+                        {
+                            "role": "taskexecutor",
+                            "endpoint": "sub_dssql"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "dssql",
+                            "endpoint": "pub_dssql"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "cnm",
+                            "endpoint": "sql"
+                        },
+                        {
+                            "role": "solvermanager",
+                            "endpoint": "storage"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "dssql",
+                            "endpoint": "rep_dssql2fe_ops"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "cnm",
+                            "endpoint": "acs"
+                        },
+                        {
+                            "role": "opc",
+                            "endpoint": "req_opc2acs"
+                        },
+                        {
+                            "role": "ucp",
+                            "endpoint": "acs"
+                        },
+                        {
+                            "role": "solvermanager",
+                            "endpoint": "req_solvermanager2acs"
+                        },
+                        {
+                            "role": "pomam",
+                            "endpoint": "req_poma2acs"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "acs",
+                            "endpoint": "rep_acs"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "opc",
+                            "endpoint": "req_solvers"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "solvermanager",
+                            "endpoint": "solvermanagerservice"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "req_fe2sm"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "solvermanager",
+                            "endpoint": "optAdmin"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "opc",
+                            "endpoint": "req_pomamanager"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "pomam",
+                            "endpoint": "rep_pomaApi"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "req_fe2pm"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "pomam",
+                            "endpoint": "rep_pomaAdmin"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "req_fe2opc"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "opc",
+                            "endpoint": "rep_optimization"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "pomam",
+                            "endpoint": "req_jobsExecutor"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "jobs",
+                            "endpoint": "jobsService"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "endpoint": "portal"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "service"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "rmAdmin"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "rm",
+                            "endpoint": "rmAdmin"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "pubsub",
+                            "endpoint": "hubData"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "rm",
+                            "endpoint": "hubData"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "rm",
+                            "endpoint": "confRM"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "pubsub",
+                            "endpoint": "confPS"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "rm",
+                            "endpoint": "rmNotification"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "rmNotification"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "endpoint": "pubsub"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "pubsub",
+                            "endpoint": "queue"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "tpmAdmin"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "tpm",
+                            "endpoint": "tpmAdmin"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "pomam",
+                            "endpoint": "req_poma2opc"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "opc",
+                            "endpoint": "rep_opc2poma"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/pubsub/1_0_0",
+                    "depended": [
+                        {
+                            "role": "jobs",
+                            "endpoint": "taskNotificationReceive"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "taskexecutor",
+                            "endpoint": "taskNotificationSend"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "cnm",
+                            "endpoint": "api_dkms"
+                        },
+                        {
+                            "role": "rm",
+                            "endpoint": "storage"
+                        },
+                        {
+                            "role": "mpe_md",
+                            "endpoint": "query"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "dkms",
+                            "endpoint": "api"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "opp",
+                            "endpoint": "actions"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "workflowActions"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "cotOrchestration"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "opp",
+                            "endpoint": "orchestration"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "mpe_aa",
+                            "endpoint": "cotassessments"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "assessment"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "dkms",
+                            "endpoint": "event_notification_mpe_md"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "mpe_md",
+                            "endpoint": "eventnotification"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "mpe_md",
+                            "endpoint": "detectionresults"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "mpe_aa",
+                            "endpoint": "detectionresults"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "ucp",
+                            "endpoint": "req_fe2cnm"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "cnm",
+                            "endpoint": "rep_cnm"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "pubsub",
+                            "endpoint": "req_acs_pubsub"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "acs",
+                            "endpoint": "rep_pubsub"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "opp",
+                            "endpoint": "tpmRequest"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "tpm",
+                            "endpoint": "tpmRequest"
+                        }
+                    ]
+                },
+                {
+                    "type": "eslap://eslap.cloud/connector/loadbalancer/1_0_0",
+                    "depended": [
+                        {
+                            "role": "dkms",
+                            "endpoint": "event_notification_opp"
+                        }
+                    ],
+                    "provided": [
+                        {
+                            "role": "opp",
+                            "endpoint": "rulenotification"
+                        }
+                    ]
+                }
+            ]
+        },
+        "components": {
+            "eslap://iti/components/acs/0_1_11": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://iti/components/acs/0_1_11",
+                "code": "acs-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "configuration": {
+                    "resources": [
+                        {
+                            "type": "eslap://eslap.cloud/resource/volume/persistent/1_0_0",
+                            "name": "acs_cert_vol"
+                        }
+                    ],
+                    "parameters": [
+                        {
+                            "name": "dbWatcherDelay",
+                            "type": "eslap://eslap.cloud/parameter/integer/1_0_0"
+                        }
+                    ]
+                },
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "rep_acs",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to receive requests"
+                        },
+                        {
+                            "name": "rep_pubsub",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to receive requests from the Pub/Sub"
+                        },
+                        {
+                            "name": "rep_rm",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to receive requests from the Resource Manager"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "req_acs2dssql",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "sub_dssql",
+                            "type": "eslap://eslap.cloud/channel/receive/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to receive PUB/SUB messages published from Ds.sql"
+                        }
+                    ]
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/cnm/1_1_0": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/cnm/1_1_0",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "code": "cnm-code-blob",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "rep_cnm",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "acs",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "sql",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "api_dkms",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/dkms/1_0_10": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/dkms/1_0_10",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "code": "dkms-code-blob",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "api",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "dssql",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "event_notification_mpe_md",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "event_notification_opp",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "event_notification_mail",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "event_notification_poma",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://iti/components/dssql/0_1_23": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://iti/components/dssql/0_1_23",
+                "code": "dssql-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "configuration": {
+                    "resources": [],
+                    "parameters": [
+                        {
+                            "name": "proxyTcpDssql",
+                            "type": "eslap://eslap.cloud/parameter/string/1_0_0",
+                            "_description": "Configuration for ProxyTCP to connect with Mariadbwrapper."
+                        },
+                        {
+                            "name": "dbWatcherDelay",
+                            "type": "eslap://eslap.cloud/parameter/integer/1_0_0",
+                            "_description": "Delay between poll requests, in milliseconds, to learn when Mariadbwrapper and the dataserver are ready."
+                        }
+                    ]
+                },
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "rep_dssql2fe_ops",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "rep_dssql2acs_ops",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "rep_dssql_sql",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "pub_dssql",
+                            "type": "eslap://eslap.cloud/channel/send/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to publish PUB/SUB messages"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "req_dssql2mdbw",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used by the ProxyTCP to connect with Mariadbwrapper"
+                        },
+                        {
+                            "name": "req_mariadbwrapper",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to send regular requests to Mariadbwrapper"
+                        },
+                        {
+                            "name": "sub_mariadbwrapper",
+                            "type": "eslap://eslap.cloud/channel/receive/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to receive PUB/SUB messages published from Mariadbwrapper"
+                        }
+                    ]
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/jobs/0_0_9": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/jobs/0_0_9",
+                "code": "jobs-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "jobsService",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "jobNotificationSend",
+                            "type": "eslap://eslap.cloud/channel/send/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "taskRequest",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "taskNotificationReceive",
+                            "type": "eslap://eslap.cloud/channel/receive/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "taskExecutorEndPoint",
+                            "type": "eslap://eslap.cloud/channel/duplex/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://iti/components/mariadbwrapper/0_1_7": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://iti/components/mariadbwrapper/0_1_7",
+                "code": "mariadbwrapper-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/mariadb/1_0_2",
+                "configuration": {
+                    "resources": [],
+                    "parameters": [
+                        {
+                            "name": "proxyTcpMariadbwrapper",
+                            "type": "eslap://eslap.cloud/parameter/string/1_0_0",
+                            "_description": "Configuration of the server end of the ProxyTcp tunnel."
+                        },
+                        {
+                            "name": "filesToLoad",
+                            "type": "eslap://eslap.cloud/parameter/list/1_0_0",
+                            "_description": "List of SQL files to load at startup time."
+                        },
+                        {
+                            "name": "mysqldMaxAllowedPacket",
+                            "type": "eslap://eslap.cloud/parameter/integer/1_0_0",
+                            "default": 1,
+                            "_description": "Optional integer value of MariaDB\\'s my.cnf\\'s max_allowed_packet param (expresses megabytes)"
+                        }
+                    ]
+                },
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "rep_mdbw2dssql",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used by the ProxyTCP to connect with Dssql."
+                        },
+                        {
+                            "name": "rep_mariadbwrapper",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to receive regular requests (for instance, by Dssql)."
+                        },
+                        {
+                            "name": "pub_mariadbwrapper",
+                            "type": "eslap://eslap.cloud/channel/send/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to publish PUB/SUB messages"
+                        }
+                    ],
+                    "requires": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://linagora.c2netproject.eu/components/mpe_aa/1_0_1": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://linagora.c2netproject.eu/components/mpe_aa/1_0_1",
+                "code": "mpe_aa-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_0",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "detectionresults",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "adaptation",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "cotassessments",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://linagora.c2netproject.eu/components/mpe_md/1_1_8": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://linagora.c2netproject.eu/components/mpe_md/1_1_8",
+                "code": "mpe_mditi-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/java/1_0_0",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "eventnotification",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "detectionresults",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "query",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/opc/0_0_8": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/opc/0_0_8",
+                "code": "java-example-c2net-opt-poma-opc-code-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/java/1_0_2",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "rep_optimization",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "rep_opc2poma",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "req_opc2acs",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "req_storage",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "req_solvers",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "req_pomamanager",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://linagora.c2netproject.eu/components/opp/1_2_1": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://linagora.c2netproject.eu/components/opp/1_2_1",
+                "code": "opp-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "orchestration",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "rulenotification",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "notifications",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "actions",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "optimisation",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "optimisationplan",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "tpmRequest",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "events",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/pomam/0_0_18": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/pomam/0_0_18",
+                "code": "java-example-c2net-opt-poma-pomam-code-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/java/1_0_2",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "notifications",
+                            "type": "eslap://eslap.cloud/channel/send/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "rep_pomaApi",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "rep_pomaAdmin",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "events",
+                            "type": "eslap://eslap.cloud/channel/receive/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "jobsNotifications",
+                            "type": "eslap://eslap.cloud/channel/receive/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "req_jobsExecutor",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "req_storage",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "req_poma2acs",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "sub_dssql",
+                            "type": "eslap://eslap.cloud/channel/receive/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "req_poma2opc",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/pubsub/0_0_13": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/pubsub/0_0_13",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "code": "pubsub-code-blob",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "queue",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "confPS",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "hubData",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "req_acs_pubsub",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://uninova.c2net/components/rm/1_3_7": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://uninova.c2net/components/rm/1_3_7",
+                "code": "resource-manager-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "sendConfig",
+                            "type": "eslap://eslap.cloud/channel/send/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "rmAdmin",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "hubData",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "storage",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "confRM",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "rmNotification",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": []
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/taskexecutor/0_0_16": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/taskexecutor/0_0_16",
+                "code": "taskexecutor-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "taskService",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "taskNotificationSend",
+                            "type": "eslap://eslap.cloud/channel/send/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "jobsEndPoint",
+                            "type": "eslap://eslap.cloud/channel/duplex/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "maria_wrapper",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "sub_dssql",
+                            "type": "eslap://eslap.cloud/channel/receive/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to receive PUB/SUB messages published from DSSQL"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": [
+                        {
+                            "name": "proxyTcpMariaWrapper",
+                            "type": "eslap://eslap.cloud/parameter/string/1_0_0"
+                        },
+                        {
+                            "name": "verboseExecution",
+                            "type": "eslap://eslap.cloud/parameter/boolean/1_0_0"
+                        }
+                    ]
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/tpm/1_0_5": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/tpm/1_0_5",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "code": "tpm-code-blob",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "tpmAdmin",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "tpmRequest",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "tpmPush",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": [
+                        {
+                            "name": "zmqPort",
+                            "type": "eslap://eslap.cloud/parameter/integer/1_0_0",
+                            "default": 9942
+                        },
+                        {
+                            "name": "autoLaunch",
+                            "type": "eslap://eslap.cloud/parameter/boolean/1_0_0",
+                            "default": true
+                        },
+                        {
+                            "name": "dummyMode",
+                            "type": "eslap://eslap.cloud/parameter/boolean/1_0_0",
+                            "default": false
+                        }
+                    ]
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/ucp/1_3_15": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/ucp/1_3_15",
+                "code": "ucp-code-blob",
+                "runtime": "eslap://linagora.c2netproject.eu/runtime/ucp/1_0_4",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "service",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "assessment",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "workflowActions",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "rmNotification",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "acs",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://emiedes.examples.ecloud/protocol/acs/0_0_1"
+                        },
+                        {
+                            "name": "cotOrchestration",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "tpmAdmin",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "rmAdmin",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "req_fe2cnm",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "req_fe2sm",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "req_fe2pm",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "req_fe2opc",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "TBD"
+                        },
+                        {
+                            "name": "send_notifications",
+                            "type": "eslap://eslap.cloud/channel/receive/1_0_0",
+                            "protocol": "TBD"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": [
+                        {
+                            "name": "usersToLoad",
+                            "type": "http://eslap.cloud/parameter/list/1_0_0",
+                            "_description": "Default UCP users"
+                        }
+                    ]
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            },
+            "eslap://c2netproject/components/solvermanager/0_0_15": {
+                "spec": "http://eslap.cloud/manifest/component/1_0_0",
+                "name": "eslap://c2netproject/components/solvermanager/0_0_15",
+                "code": "solvermanager-code-blob",
+                "runtime": "eslap://c2netproject.eu/runtime/nodejs/1_0_2",
+                "channels": {
+                    "provides": [
+                        {
+                            "name": "solvermanagerservice",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "optAdmin",
+                            "type": "eslap://eslap.cloud/channel/reply/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        }
+                    ],
+                    "requires": [
+                        {
+                            "name": "storage",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "req_solvermanager2acs",
+                            "type": "eslap://eslap.cloud/channel/request/1_0_0",
+                            "protocol": "eslap://eslap.cloud/protocol/message/http/0_0_1"
+                        },
+                        {
+                            "name": "sub_dssql",
+                            "type": "eslap://eslap.cloud/channel/receive/1_0_0",
+                            "protocol": "TBD",
+                            "_description": "Used to receive PUB/SUB messages published from Ds.sql"
+                        }
+                    ]
+                },
+                "configuration": {
+                    "resources": [],
+                    "parameters": [
+                        {
+                            "name": "dbWatcherDelay",
+                            "type": "eslap://eslap.cloud/parameter/integer/1_0_0"
+                        }
+                    ]
+                },
+                "profile": {
+                    "threadability": "*"
+                }
+            }
+        },
+        "resources": {
+            "eslap://c2netproject/resources/cert/server/argo_dataservice_cert": {
+                "spec": "eslap://eslap.cloud/resource/cert/server/1_0_0",
+                "name": "eslap://c2netproject/resources/cert/server/argo_dataservice_cert",
+                "parameters": {
+                    "content": {
+                        "cert": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZZakNDQTBxZ0F3SUJBZ0lKQUkyeUMyZTMzZ3k5TUEwR0NTcUdTSWIzRFFFQkN3VUFNR014Q3pBSkJnTlYKQkFZVEFrVlRNUkV3RHdZRFZRUUlEQWhXWVd4bGJtTnBZVEVSTUE4R0ExVUVCd3dJVm1Gc1pXNWphV0V4RERBSwpCZ05WQkFvTUEwbFVTVEVOTUFzR0ExVUVDd3dFVTJsRWFURVJNQThHQTFVRUF3d0lRekpPUlZRZ1EwRXdIaGNOCk1UY3dOekEyTVRFeE5qTTNXaGNOTWpBd016TXhNVEV4TmpNM1dqQitNUXN3Q1FZRFZRUUdFd0pGVXpFUk1BOEcKQTFVRUNBd0lWbUZzWlc1amFXRXhFVEFQQmdOVkJBY01DRlpoYkdWdVkybGhNUXd3Q2dZRFZRUUtEQU5KVkVreApEVEFMQmdOVkJBc01CRk5wUkdreExEQXFCZ05WQkFNTUkyTXlibVYwTFdSaGRHRnpaWEoyYVdObExtRnlaMjh1CmEzVnRiM0pwTG1Oc2IzVmtNSUlDSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQWc4QU1JSUNDZ0tDQWdFQTFUNmQKUVhlMldYQXc0QkF5YmRlZU9uWC9kWWl2K3MrTnQyTEEvSXAva1doNzA5ZndnZHpYa2w1M0VST2l0djBFYmhhUgpwcWZkY3gwOGs0S1RSSXBhc0U3QmFnaUFMQlhQTXFacE1Eb09hbE1lN0NFaDU0Q29Bc1V6MHdjNVFDeXkvSy9aCkVFZEwxZGV3cExWbEV2UWFTM0EyNUYvSjN1SERaZDRYbVpGMEdsMENOektZM2RJMmNjaGJSYkdRZng5US9XVk8KRWtxMWZpWnJ2eml6eTAvRHJ3Y01CM0hpT1JoUi9JQWlHQ3VXVmFEblJndzZpcEkxc1VFT2owVHVOYzViSTlFNQprREl6Z3VMOXc1YXJDbW5xYldLbzh6c3Q4cjRyMVFDbjh6ZCtGOEZCOEl1ZjVlR3N2K2lWTVZKWVVUK1RiRllZCjVlakFVNloxVmVObjc2TDJOM3l4ZzdXVnRFQWdBdEhabGE3YnFNZGxsZE9vMTlsaEVBbVZjeHVMbEhiQWpPOVYKMkNxK2JtYzZLL2hUaWc1VG12OVE1elJ2Q0Q1YmM3WDh5QW1GeGdxaHFiQ3c5MmtBemt4SExiWjFDN05kMG1OawplQkVMVnI1K21JckFJaFR0REZVMkkvOUFLYm9peDMrcU1QZTNFMzJQUnY4YkhpY3pCdnlZZ0JabHpiL2xtcE1VCm9NY2RNZ3h3aWw0RGQwcitqWG10aVdKdFg1ZGJxL1Z0T3kzNTZxT3dLWlBtQUpzSFVRTFhuN1NDSTZnV3ZHWW8KNjJoTnpOREhTMHp2aWkydTdtZk56dGlRbENYZVVSK3hCZWp3TmxLTUgvZGVkejNTZlpkZzZETEhxMDRQWVM4MgpEYU1nTFhEZXBuZlVlODV1NzdSYmpUdG9LalY4YnVLQVRzUWl2bGtDQXdFQUFUQU5CZ2txaGtpRzl3MEJBUXNGCkFBT0NBZ0VBY1F0Ky82cE5lUHp5cytqZVoyQWtER2JDOTlueE9SSUl5TitMNDRxVDkwUlNyaHhWSUg1RjkyVDYKWmh3RWNnUUZGeHZFVWlIUGo3UmJLUk8xZ2x3TG1ualdhbnRSYWVlTE1ERXU4V0hpQWF4K1h4UjlMUTJWMVY0YgprcEx4Tmpnai9qVUJzY00ySFUxYjFkWXhQMkZiZEZyeWpVVURJMVFhcWxHZUFERy8xWkdLd0NLL2RiTkdMVGNRCjJONFVRSXZYajVUV1dvd2ptdE56eW9ZQXpYeWFnSjE3eXVZMU5IN3pzN3hsV1k3c3pJY3JwaldDMk9FTE9CZEcKMTJ0ejlxWTBHQk9vK0xjOERLaThzRmRTeFlURUc2aUR6S1pZaEFQdElsQ0R1Y0JxajlDVzNDcVFnOVdsMlJGSApPUURvdy9FaWxLd2puT095Y2dPNEx3akFPalFXaTNUNXBSZk9nUitXbWt2dTZuazcyMUNTODZTK0Vqd3FTSng5ClhpWGxZYjM1ODRtUUVHOEQ5bm1ZVlFCbnZvME9ZSDduMy9GYUQ5NER4ZWI2cTJDdWN3aEx2NUJLckwrWmVpd2QKM3FBSU5vam4zY1laQlQ3OE5aTDl3MkZYais1dUd0Y3JWNHhybXNCVFB6OXRibnlHZjhOa2I0ZkN3MUV1RFJGVwpSUDVEV244V01QMnlPYmtIN3VkeHdOdDV0SlZUL0M3dTRsY2hoR2pEbDh0Q3IrQUVWTUNxc2JBSjdxWktHRFhQCkM5VlY2bzBoeHJpWDdVVlhIS2gvZ1JIZCtYYTgvSk5yUnhoUWZ6eittN0ZrdzV6N25jem1mVlU4NXZvM0Fjb0wKUmx5YktrdEJadU1ldGZxZFFWeGsrRENEb2kweHN3WUN4Q2pHczhyQStjSEQ1MkxjeWNrPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+                        "key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS2dJQkFBS0NBZ0VBMVQ2ZFFYZTJXWEF3NEJBeWJkZWVPblgvZFlpditzK050MkxBL0lwL2tXaDcwOWZ3CmdkelhrbDUzRVJPaXR2MEViaGFScHFmZGN4MDhrNEtUUklwYXNFN0JhZ2lBTEJYUE1xWnBNRG9PYWxNZTdDRWgKNTRDb0FzVXowd2M1UUN5eS9LL1pFRWRMMWRld3BMVmxFdlFhUzNBMjVGL0ozdUhEWmQ0WG1aRjBHbDBDTnpLWQozZEkyY2NoYlJiR1FmeDlRL1dWT0VrcTFmaVpydnppenkwL0Ryd2NNQjNIaU9SaFIvSUFpR0N1V1ZhRG5SZ3c2CmlwSTFzVUVPajBUdU5jNWJJOUU1a0RJemd1TDl3NWFyQ21ucWJXS284enN0OHI0cjFRQ244emQrRjhGQjhJdWYKNWVHc3YraVZNVkpZVVQrVGJGWVk1ZWpBVTZaMVZlTm43NkwyTjN5eGc3V1Z0RUFnQXRIWmxhN2JxTWRsbGRPbwoxOWxoRUFtVmN4dUxsSGJBak85VjJDcStibWM2Sy9oVGlnNVRtdjlRNXpSdkNENWJjN1g4eUFtRnhncWhxYkN3Cjkya0F6a3hITGJaMUM3TmQwbU5rZUJFTFZyNSttSXJBSWhUdERGVTJJLzlBS2JvaXgzK3FNUGUzRTMyUFJ2OGIKSGljekJ2eVlnQlpsemIvbG1wTVVvTWNkTWd4d2lsNERkMHIralhtdGlXSnRYNWRicS9WdE95MzU2cU93S1pQbQpBSnNIVVFMWG43U0NJNmdXdkdZbzYyaE56TkRIUzB6dmlpMnU3bWZOenRpUWxDWGVVUit4QmVqd05sS01IL2RlCmR6M1NmWmRnNkRMSHEwNFBZUzgyRGFNZ0xYRGVwbmZVZTg1dTc3UmJqVHRvS2pWOGJ1S0FUc1FpdmxrQ0F3RUEKQVFLQ0FnRUFxSTIzaXpudXZyODVRc0pLdWh3R2k3c2RVMi9aZWV4NDNnMkc4WmNmd25YTit1TGl6aU1ibWl4awovUENDV3hXZlhNMG1ENDc4TWJOWVlGaUR3MWVBMjM5RXptVXR1cXI2ZmRTZnJHa1hYOStYdjVsb3pTNGFueVgxCkVzYlE3L0xrLzJxWHJwQk1WeGtJSFFqc2ZaREkvL3dReDI4WGg3NzN6aHRBbURncWgzUWcvalJXTkcrbWJVV3IKTDJsdEI2NWZQQXZKTEJnMVlTTkpZM3FVVXc0WFpNK3pLR2RTSTBNZit1L2xBeW5neUlwSWhFdkNNaW5qbXRvTApnaDlBRXZPcmdxSXNWOWYyYzJ5c25OOEpEMUFzNW8xbmNlckRKTzVBZ3pyamhoSEU3MDNvcXhRU0xZaTJIWExnCkNuNUdKT0tWeXJvN0wrOUxwbE1heCtyYUNzYkt5aG81aURqb1Nyd01sLzVOb09xdWdUeVJGVUtOaUdYTklBaTMKU0lndGhFclFQRWJGYW8wWG9wY3RBbWRTWjVhS2VmQktVRjBQRngyYXV6OEdpTDlReHM3Qk0wYnlsbUU1WUtxQQprakY4L0hOU3V1SldOalhHZTlMT1FDSmxxcm5tUU1DNTR3NTAxY2dTYVRtZUtJRkdPTXB5Q1JhSXFIeEM0OTgzCnNKcGxFdDlqcTExY3Y0U2FZZXV5QnJxY1JrUW55ajN4dlc4c1RaY21vYTNwcXVhc05NN0VHKzJ3aXN3VGdVOEEKYk5yQjBXR2EvOU9HWEw0NVM2bjRadGhhMDRLeVM2d0IrMXMrQTN4RVhPK2JSejQyamZ4Sk41THpvVWNmYVhwMQpwYy91WnBWb2x2K3NKRWNIVmdDTDM3aEdHWWxEZngzV3Z3RStyYkQ0akVraU12elp3YWtDZ2dFQkFQL1JuRkFEClpQMjI5amNFNTB0Wno3eGNxeXFUaWc3Q1loTWlTL0M2Y3JnWEpiWlNKb1JPOG01RzVjWnB1bzRXclcxMVJoWWQKelNFcDgzall0SEJVN0NSamxvSjJ3WE5XZFhCeTl2Q25mWUIrR2lXMkU0cm5KTUtYT1pqTzdyTWlha0hYdnJteQpjQmNmbzBnWDRDKyt4c1IrYXpHaEgzOUdLcXROU0lEWGcwWlVhMGZwcDI5WXRqL2RDMCtXMk81cWlYMFVxQis0CldWbXovdVBTRVQwcjFIVmZQQmlnZ2p0MmtPNmEwQXlTVEFwdCtQTTZYTzBwWnFoRnI3MldXVG02ZktsbWhJenoKR1ZrVHEzRUhyaGZwTUR6c2ZvcXM2RmNjOHhOMG85L05KcXBIdkkzNHVhSFZyRXFNTk90UmFlcHlWKzlMZHFuZwpUZnBUMDc2eVlOd2daOHNDZ2dFQkFOVmxTSTFlK1poTnhRKy9lLzFlK216YzdMemxjNlpSclA2dnR2V1NuVkgxCkRHQTNEYTk2YlZ3M0ZEMmNtcEdOMkI0KytseThjd3IvZ1NqQytyWTJSRklJK0J1dm9pMmIzaTZGUDdvaVhsbUwKRi9yY2hJSUx5MDRKcHpFL3M3d3AvNkY1aEkxY0lJclRZR2pCbm1hOVVCd1k2b3ZqbEFadFhuVDA2YXQ5VXZaMwpSQVpUcERVRVFFN25iKzVXS0labGJtcXB3N2FpcUJJZ0xOTHRKVlZITklUejhBTkZJcXNnSUtreWl1aU53OFdsCnJETWZCbnl4bVhMbXR2dlZvUGZoTXVHaGlkeWlHZ2xLZjNqQkZ1NlV1Z1pKc1JSbFVFT1FYWHhFYmM3NE80QXMKTXVCRFNjOGZjaFBYQ0lOY1NXNUVBdCt3d1QzbFNYK0Rnc21yOTlDRmhlc0NnZ0VCQUxraHRJR2pNejc1WFkzTAptcWRKUTdFSlQwWHNxQWl1VzlPRkNuZ1lObFZMU3h0NnNDMG9CUUlSaE0vbVMvL3dJV29KYU1Nd3BmYk9LVWpYCmF4MndGNFR1SFVvbEx6S002MGlKcW5QV2dsaXU2YlZJNHpPdXUwZW5zU01JL20zZEJoRElWVnFGNitDUUlOWlgKa1FKOGlkUkJ1TW1kMVBHQ2tmYU9ZMTM2bVNJWWpkcnBHU2JYaUcwSFJ0dytTcGVmdWdndkhzeDEyUk8xMDB5RQpCYjNETG1vU2xhY3M0Wkt1NTR3RnRYS2puU3dmRWY3VHlkUklGZWJKSjdtSVNPSWlOMzFRbDdSNWFXcXhkV3pECkpoWmZ4MjBQcVRRcWxhb1ZaVVE3TVMwUmhsM010SVA1OEQxU0tQRjZMZ0h1VlR3NXE3R2RaeTdoQ1EyVUJMVUkKMmxmemk2a0NnZ0VBQWpOOVFCZ09zd2Q2Vk9OQXdDaE9wUGpTYUZCbGxQMmFyelhZeVVldDM3NkxWaUs3UFdnaAo0S1dneTlIbHRrS2tUQXVTUVlxZ0ZTajFpQm9hdys1alhnVkJxZWR4NE02T3lDUVB1RGZLaVZucDhXaDg1V3FCCnVsaFhKU2JuRDdYUE1UY3pxdEdjZEZJaDJITEcwNEI0WnhIS3VZNnJaRFdVbDlnKzRNbjJKUnl0MHZMaDZyb1UKZjd2Ylo3WHp6UThXeUhyZnplNTNsVmhIbmhWY0lUa096YUJHaFlJZERXN1RaMnRpQzJ3SzdPcjhqN3B1TXJNUwpSaUVqR2czbUR5aC9nZHhNczczb1R0ZzU0R0Q5ZjVDQktyZHY0Q243WGZjTFA5RGs0UkdtYTNnSlBrN3pYL09QCkZhMU9KU3k2aFN5bWF2QkR6Z09qY25GRTFCZTJBcXlkNlFLQ0FRRUFpeUV4RWVVclpRaDZEeUNpbjRTL2lIeTMKR3BGR3JwTHpRVERscnkySUFrYmQydDA2MG9uQnFJQ2RtZzJBZjN1aFhsWEh5WWI5WTFnZjE3OFBZRVE4dUpWTgpLelBIbU1HeUZMenBPUDZmakUyV29nNGNBbWhCbXhZMUVNRTY2dHdoNHJpQUd1MUc4VUFCeElxQWVmeGI4VzQ4Cjl1NVg4NFlxNGRIc1pQQlR0Rm1mTmJQUTNFNko5eG12TXZXMWlWMEg1R2lMYkJJZ1pRSW5VL2xVa0JWTmNtZlYKcmM3cG9IM1BSY1NrRUNzZmJrMmRvK1ZiTUxxNTNmMnA1VzNpYUZRR3lBTms4S0pWclBZamRjMGd3RlRGTG5TVQpFL2lnZUpNQVg1R3BXSFZuUEtYUTV1a3AyNDhQcm9pNmV2V3lVYzhhMnZ3Z0ZTRkFxaW1iWGNFWlNzeC94dz09Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==",
+                        "ca": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZRakNDQXlvQ0NRQ3A0RmdWQXNTU0JEQU5CZ2txaGtpRzl3MEJBUXNGQURCak1Rc3dDUVlEVlFRR0V3SkYKVXpFUk1BOEdBMVVFQ0F3SVZtRnNaVzVqYVdFeEVUQVBCZ05WQkFjTUNGWmhiR1Z1WTJsaE1Rd3dDZ1lEVlFRSwpEQU5KVkVreERUQUxCZ05WQkFzTUJGTnBSR2t4RVRBUEJnTlZCQU1NQ0VNeVRrVlVJRU5CTUI0WERURTNNRFV4Ck5URXhNall5TkZvWERUUTBNRGt5T1RFeE1qWXlORm93WXpFTE1Ba0dBMVVFQmhNQ1JWTXhFVEFQQmdOVkJBZ00KQ0ZaaGJHVnVZMmxoTVJFd0R3WURWUVFIREFoV1lXeGxibU5wWVRFTU1Bb0dBMVVFQ2d3RFNWUkpNUTB3Q3dZRApWUVFMREFSVGFVUnBNUkV3RHdZRFZRUUREQWhETWs1RlZDQkRRVENDQWlJd0RRWUpLb1pJaHZjTkFRRUJCUUFECmdnSVBBRENDQWdvQ2dnSUJBSnBJMmttQ2p4bVc2NHlQUjdieTdlOTNFLys3b0VTZFowV3hsQ0FQSi8zbmczamsKSlg4OUFWS0wrZUkzclg0UFYyNTBPSTdkUUdWTU1pWTBUcG9yQ3VFb2plNHVySzdNYnNROFBBKzBNcURDaW5hSgo0VHdyTHR6ODBmYzdPK09LNldobG0wSzh4Smx6L2Q0VnJJTTU2aVJ0MXF3UHhSejUxTHZkOHlVcjBERS9oeTRlCjBDWlhlalZMb2xjVnptam1YaWJyOS9EYW5kRGRuT0tTNGprOW44dy9rbkNkd2YyRjdObFdvZ3RxWGtEaUpVS2MKSDl2a1R3cWJWakt5K3Q2d1Z0cVg2Zms5bXZZbStCSmxwcWJrS285Q3Z5RFlmOFc1dXlUUHpCcWhBVTllWWZSUApMYW00bjlWYWVLK1NEOFhrUTZhZklmckc1ckNOMWxsaHhEMS9xeVQxaUxtdmliN3hRV3F4dDhTOU5QQ1Q5SS9ICllpdlB0UFBneEdmOEU0dldLeUYwMDNGbjRKOW1PYnZtWVNMZWRwdDV2VWxjQUV0dFRxVkRPYlkyKytleXYzb1QKcWFaYndRS2d6b2xzVmI4NzNRbHk3dmFSbjlzeVdOWXNLUU1jSkl0ekZIc0ZMY0Z4K0tLamZNMHBkV1prbjhpQgpqNk9rWFYrT0RiclViZUVHanR4NUlnSjhycHduZjlrVHUzdW5BN0dBNzNpNjNOUHRhd1lVRWVxT3A5by9MMlo3CjZtNXJiUWNDZEFQbnZtYnhaQWlsNGR4WnBwRXlxN3daL1pGRVFsV0VGZ091cWg3bElWUEJ6d2JLblZTVno4aGEKNXd2RjRnNUx1OHV1NURSZFhBQ0h0bzZDWkxOaFJKOEpzRTJPeTFUNlhHTXVyN0MrMnUyWmJmd2pTakFmQWdNQgpBQUV3RFFZSktvWklodmNOQVFFTEJRQURnZ0lCQUE1Zlo1K0NSd25RVEM2TVhjckt1RUkzdzU0Uk5hOWU0VFp2ClFFN2M4WElLaXR5VXJrbUxRRitDeXpvcGlrck1jYTJVZmNDSmlJZlZJUjdQdzRaUDNuN2RaMTBUbGk1UWRObzkKckZZNlNub3VyR21ZQUR0UXc5d1NETWpEYjNDS0xobzM2TnFLY1grc2I2T3lEWHB2Nml2bWdObFlhRjVkVkRGdAozUTJIZWc4WTl4alJHTXNFMUxyNTZNRlVQRjFvUjl1c09MVENSb0dJQUVaM0ZyOEZWWjMwcmlKc1JaV2pVZGt6CmxrazdGRVZvZE03YjJjWTQvVW5iWmZzQStQSkdnYzA2Q0tzMlV1blB2cm5HWlVSalFYMUxPd0FNRG1TVGhqd2oKNENQWlNsalhhSENzR1EyeVIzVmhRcCtFM3N4eTZDSlBRUVZPaWRwMEgvRjNiWG1GOGNDd0NGMElaeWFlZzlvOQoyeVFIOXlNMVNMaFdVdEx6U0pieXJVa3hFcjRmQ2FPc3NjNGdsY1k1d0kyMjJCckE1YjVlL29Wa1RDN2hTYld0CjJUeUx5L3JuOTVkSCs1NnNUa0ZaUDZlTXFDMGNqdmc2am0va3hMTXhlN2dBcVJncWRBNjQ3enpObTFXUUlVNFYKbENuMUVrNlNsMnoxbXI1VE5FVnZuK1NYZlY1S25MZklVa3NORURycEFGQjV2RzZOQnpzb1pIR1liY3VNcUVTLwpZZEFraFlSbkJiM1J6b3ZpVTdQZjFXLy95TlBXS2o2djA0L0hvSmM0VEl1RTkzaEZyK3dTUmRQM3BVWFZDZlVjCi9NRVBDRTlLUTJzdXpjY1NVVWRHb0tVSU0wcTEzaWpNaWs1QTI4bU5Md2IvWkJsL2IzNnFtOXBIVThwUHNzT08KYUFuZnlXWjEKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+                    }
+                }
+            },
+            "eslap://c2netproject/resources/vhost/argo_dataservice": {
+                "spec": "eslap://eslap.cloud/resource/vhost/1_0_0",
+                "name": "eslap://c2netproject/resources/vhost/argo_dataservice",
+                "parameters": {
+                    "vhost": "c2net-dataservice.argo.kumori.cloud"
+                }
+            },
+            "eslap://c2netproject/resources/cert/server/argo_service_cert": {
+                "spec": "eslap://eslap.cloud/resource/cert/server/1_0_0",
+                "name": "eslap://c2netproject/resources/cert/server/argo_service_cert",
+                "parameters": {
+                    "content": {
+                        "cert": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZYakNDQTBhZ0F3SUJBZ0lKQUkyeUMyZTMzZ3k4TUEwR0NTcUdTSWIzRFFFQkN3VUFNR014Q3pBSkJnTlYKQkFZVEFrVlRNUkV3RHdZRFZRUUlEQWhXWVd4bGJtTnBZVEVSTUE4R0ExVUVCd3dJVm1Gc1pXNWphV0V4RERBSwpCZ05WQkFvTUEwbFVTVEVOTUFzR0ExVUVDd3dFVTJsRWFURVJNQThHQTFVRUF3d0lRekpPUlZRZ1EwRXdIaGNOCk1UY3dOekEyTVRFeE5qSTVXaGNOTWpBd016TXhNVEV4TmpJNVdqQjZNUXN3Q1FZRFZRUUdFd0pGVXpFUk1BOEcKQTFVRUNBd0lWbUZzWlc1amFXRXhFVEFQQmdOVkJBY01DRlpoYkdWdVkybGhNUXd3Q2dZRFZRUUtEQU5KVkVreApEVEFMQmdOVkJBc01CRk5wUkdreEtEQW1CZ05WQkFNTUgyTXlibVYwTFhObGNuWnBZMlV1WVhKbmJ5NXJkVzF2CmNta3VZMnh2ZFdRd2dnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUNuN0JZeThEWSsKTXJSRVI2V3RxOHFSQS9TY05FZVNMZ3VqZkx5cmhuVlpCNHNSVkdoSVBUWkFFOUl5WTcxZEh6R2pCKzZpRTFpUgpqbU9ER0swOEY2QXRDSVU1Wk8wc1ZaMzFZY04zMmtHQy8vN04yTmFSN29DTC9Ed3E2Q1F6cjZlai9MN3dKZjhZCnRRL2I4T3dzVEdvYnVoWFZYOFhRbVBpYWtIbUl2aDZJUTJYOGZZdmVCRzZkU0hUR1psL2pzKzZMdEt6V1lmZmcKN1libmpxTUFKS3JJWVJ5dnJTU0d1U25NeEN2d1cvRExlS1BURzRnL29pWHBtYlFjTUR4enJ5bHhidXFTSHFNegpHQjJUN2ZITlpFaGFxR2tvWXVsdWE2djkrZHVRenI0d1dtMGxqWDRyalB1WVNOcDE5dXBadHNKZ09YNHNqSTdRCmh4MVRNaW4xK2Y2V2lpcTZNQVVzeWpzMFpsUVlxVUtzV2tNem5NckFwYUtPaWRYZURQRkNIeWI3TDhvMjNkUlQKZEFoVW9MWmdrdEUwamFXN2Q5UVRFTE5oT3ZsVEZxdHdwV092QkpieWgxSi9CY0Rkc1ZvNTljQXdZUnNkbnpwQwpDN0s4dmtlamROUCt1bmtFQkJPcmwwN2R5dG5ST0ZpN1RMNmhKL2d4ZmkwUnI0Q0c5Qm93bUpLNmp3UWxpT00rCldOam5ndXA5OU9yUkhzNlpScVM3UVpJMUNHQ0FBQkFyeWMzakdXZ0JUY29SVHNWUVNOWWxIcnFnUE5ZdFdhN1kKZ0ZZUWdXaHUvWGM3dnE0cHJTL3BiKzRYNlFZVVd5MldpKzBsRnRaWDV4Q0VCUkZoZVNQcm9Db0NOOS9yOGtHQgpabTg2SzczWlkvRWRocDJQS1VMNVJ3T2laRTVNTjVGVk9RSURBUUFCTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElDCkFRQVpnak9xZ051OEJoN3RBRzJ5U29YVWdKdUVCS3I0U1diTGVNWk81RzNmVVlLcHR2ZTh1SjBwVUplNWRldVQKdkxpOWgrTXh2Y1VKREJ1c253cGFGZXBrWnI5QXBKZ01qUjcvRmltRDQyM3NNSlo4UUFjeEVqZ2FoSXVEb3FuaQplcm5iWFpiNkxLcHZvRUdLd1dZemljNkNwZ1g3K2hXaC9KTFhSQ1R2ZzRCclFocy8xUCtHMUZtSVV2TllaNkFUCkUwZU1aWFEwdkVjZjhuSGcxeTVjSU5BY2tyUUpsNXV4eUduRUtYS29LdEhTcitNYmVHS2NudGYyVTZOb3BCUFIKZWpiSWUrOWgxQkZKdmNRWldlcjBPQU1nTit6SmJTUDNySTdsUVJrQkVzMndjMjlCT2s0Q0ZCbEczMW1VS0I5NQpMWVhjNkpRMjF4NHFncUV4MWxSWGdTZFhjSFU1dEVMM0VOaVhtS244RGFYQTcrcnVJZGh5R3ZZYTVWMkJ2SkE0Cmt4WEYvamxNUUR6TSs0emkvNWsvS21UOFdtM3B0SnFXYUFzTzFTRmc1TEhrQW1IMG84bW5LcGh4amxlL01ia24KT3lycDdFVmJqRkZlSkRRazlYSWlDMFlxNVI4OVR3dS91dzg5ZlJnZmJQTEM3cmxwUlFGTVFWaVJJY1hqK1BXZgptbDE5NXlJSTZyTFFRODZpT05VSUdzOENpdWdSbGJmbE40ejl6cEdDMHdiU3c3bHBOc3E2dXRXbTFuT3ozTjlvCnhQVGU2RGRtMW5oRml5L3lneGtzMnAxWTRYdG9CVjBGbm82OEI2Wk5TRWZ6aDR4b2RodGtoOUQ5eVNGeWRYY04KWVcrRnB0TjhOQzhLWDZnWDFTVWtXeUVJeWVaY243cWxXc1h0MzgxZjhMNnc5dz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K",
+                        "key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKSndJQkFBS0NBZ0VBcCt3V012QTJQakswUkVlbHJhdktrUVAwbkRSSGtpNExvM3k4cTRaMVdRZUxFVlJvClNEMDJRQlBTTW1POVhSOHhvd2Z1b2hOWWtZNWpneGl0UEJlZ0xRaUZPV1R0TEZXZDlXSERkOXBCZ3YvK3pkalcKa2U2QWkvdzhLdWdrTTYrbm8veSs4Q1gvR0xVUDIvRHNMRXhxRzdvVjFWL0YwSmo0bXBCNWlMNGVpRU5sL0gyTAozZ1J1blVoMHhtWmY0N1B1aTdTczFtSDM0TzJHNTQ2akFDU3F5R0VjcjYwa2hya3B6TVFyOEZ2d3kzaWoweHVJClA2SWw2Wm0wSERBOGM2OHBjVzdxa2g2ak14Z2RrKzN4eldSSVdxaHBLR0xwYm11ci9mbmJrTTYrTUZwdEpZMSsKSzR6N21FamFkZmJxV2JiQ1lEbCtMSXlPMEljZFV6SXA5Zm4rbG9vcXVqQUZMTW83TkdaVUdLbENyRnBETTV6Swp3S1dpam9uVjNnenhRaDhtK3kvS050M1VVM1FJVktDMllKTFJOSTJsdTNmVUV4Q3pZVHI1VXhhcmNLVmpyd1NXCjhvZFNmd1hBM2JGYU9mWEFNR0ViSFo4NlFndXl2TDVIbzNUVC9ycDVCQVFUcTVkTzNjclowVGhZdTB5K29TZjQKTVg0dEVhK0FodlFhTUppU3VvOEVKWWpqUGxqWTU0THFmZlRxMFI3T21VYWt1MEdTTlFoZ2dBQVFLOG5ONHhsbwpBVTNLRVU3RlVFaldKUjY2b0R6V0xWbXUySUJXRUlGb2J2MTNPNzZ1S2EwdjZXL3VGK2tHRkZzdGxvdnRKUmJXClYrY1FoQVVSWVhrajY2QXFBamZmNi9KQmdXWnZPaXU5MldQeEhZYWRqeWxDK1VjRG9tUk9URGVSVlRrQ0F3RUEKQVFLQ0FnQU1NWm1mRTFCdERkT0hUY2liSnVscnhHVEQzd3YvY25hSDVhdnhySzdpeXlodkZya0gzZUlObnlMWgpZK0xCVzEySVlEQVU5dUNzbVRGaXVLMER1eGQzamJIVzdCeEk1dUswaWVmZTBTdUdycjQ3Qm03MlkrSlR4L282CmgyYnhsZVRQaEsvODBsV0czc2NMQ3FDcnl0Uzl0TEtYTHdBM1dKUmM3UGJXVmkvelp5bUZ2endqNENDRUxWbkYKZW5PbUhrL0pOMUtCc3RXRU1OdGwvemFZOFJDeHdsT0o4a0cvd3J4bFVTMTdvOEdGbFBvWWYxeFNlcHpVTE1RbQpjOTQvN0UxUEhtWE1QSXRQVDRYK1V2NEhFeXdwNFNiWnR1MEtocWtUcFV3clpNZnN6UFEyRU9ORG1GWkF4YkdQCmRXR3BLQnRQVDMxNUVLL2lOcDJMaUE0Qi9haGQrZ2ZPUW9uSzZNYnhQQ3NORkl1aXdLNXJqeEtPZVRLbm1HOGIKanpoNlp5Z3cwODRMSnFhWVhURzA3SXduN0ozSXFhL0U0L1JvTGRWZW9JcWZDTG5JU25TOHVDMkdWc3FkYzNFSAoyT0NoZGFPcVkvOWNNREFJKzJUdE1hZkVBYXIyOXh3R1pMTHJUSEZWcC8wZm10NWUvUlo3S2ZuT2h6VFRHOW5aCjdpZE40ZXBxWTBZcXFncFUwZkV0WWxBTldzTzZRbmlhdFZ0WjFFYU1MdUc5a3lQc0oyaVhOb2ppMUNPbEYyT28KV3hkTXJQRmlnNVVOS2dSZDVoVWpzWDI2QkFnKytCMVRWRmJrOUprT1I0ZGk4c0EzUDlVZ0dQN1FyTWE4eFNBSApJR0hFdU95WWdjL3hjTzNpaEUxa2V1RS9walYrdy9RcFRTK3g0Uis3cEw5SzhRL0RNUUtDQVFFQTBBYitxendzCkNVQUEyWFJocjRJNk92bzZXK05hSGtva2NIbmlMdkNDVXR6bE9CWVZXUGtuSmN4UzZKdW12N1VQUW1lR0VrUzYKRGpLMFkzK1dqZzM2aHlzKzFNbDlEOHh6R3Y3dUVpeXBUSUNmN3hReGZwVk9PL3dTREQ4VXJKL0J1cW5GWXdYQgpORW1GVzRlUjdNaktvTitRYlQvWjMxMXYwN2d4VDBPUmhKM0ZlV3FUU2tRNDdDY2JINGJWZ3FTSGZoaGlzTm5YCjZaZktxVElMUDk5VmhEN240NE4yWCszcmFpZXdXN0tNUlR5M205RGFYZHJTTVdQK0hmZEorN3FSTXUrTnRCNlIKUVZteHF5Y09taDBKZmlnV1IzanFIZDBkbFlwZzUvdjVJUjB2WlM1clNaS1U3TEN5TE1TR3BCSHNGTHYydXZwawp1L3ZEZEZSMFc0S2kvUUtDQVFFQXpxVjNFMk1ZWkZ1bXR2cHZ1TWtKWHR2ZWNDNThPR3ltMDQxZHN0dnIzN3IvCmJidGxOTzhGbGd0RG1nZW9hSFJaMHY0cUFldHZEVWtWR05JSWhqUkxxYVpoblFycWpveW1hQzB1OE4wU3FmRGQKSGtqNFR4djhuRDBkL3ZXV1NpdEdUU29GRmUzb3N5TmJSTHF1VXU3a1ljWDcvcHV5aDQyNEY2ZjJpYmJUOGNoTApBaGpaTDZyQmFtOTBUWlJwaE1aZDgyWU5ZY1dOZE9ZQTNHcE5pczB5WnFlamhZQXpGWWlZYW9VQVZpbENBOUxTCnJ1dzNjQ2RNNmdjNWRqOHlrMWNOTHJpUGd0R3hFekxUYU42ZXlZNGFlUFZyM1hhZklzd2tjSFBrYVUwY3kwSGsKMGxpdFVGYUVwVGEzVWFzR3R6UVVYMkZrdDVwekNqZkNTelpFN3ErRjdRS0NBUUF2QW9XbWVKQ1MvbzJ5bG1SRQozeTc5aVBLTE5WTjJLTmNYTzlQck81cVgweWRSaDF3SG9UWkJpbXpwOTlLMDI5dTQ2K0FXWE1XVzA4cUQrWjh5Ck51SjRqVU5EbnN6T055dUQzRHc4aXk4dkJKb2YwdlprWHFVeFZRTlhGU0k4NkZWRk0zeFJwa2xFNGFCclVMV2YKUnJqVHBmSGpYbHlENTMrUDNyMzE1WlVLM1FSMUxhcGZUQTk0L2xWWXlJV1RZazdrSmVxWGdJTVVYS01GblRPQgptWnlmcC8rTElIZ3RzWHhUbnVoeHNHV1dkK1FlS0JKUXgxUmNxUFlTRzRIeWl2U3BDQTJEdUt5bWtmaGVieE1UCnJLQXFqRENNc2p4bHgwUWFPUTB4SDNYckQ4ZFlIQ2RPbHZ0a2lZR2FNRWNrNkkvckY1Ym9KaEdCa2FGWHRvWWMKNythWkFvSUJBSGYwVHhIKzlSclVwUXNVaHlQeDl6R01XaXd1bjhjMU13WWN5cVpYeVMxZlpJU3pRa1dlOWxRcQpCN3p5OHd4bmRmam50MFRVQU92cVg0ZS83RmpUSkpTL1UyeVErS1YwK2VnQlNuMWhKME5rNFVhQ1B6blUyaWRyCnh1ekliTXh6SUdVTW5sVWpmRy80ZHpPSFZrZ29Db1RESTh1aFg5b1dKeVg4UnoyYjFwNUVrVjRQUkl2S0NHcWIKZGh6T3FRMzlCRzZVNy9Hd2RyUEVDLzNtNjBwR1lScDc5NDA0Wk83OEV0WEtqTzUzRnE0WGhGc3NIZVpKdWZrago1blJBclVBZ1NUTzB5UUc4YlpqaWFSdzRGbDZUMGNRald0RDgyZFdlUVF6U0NXWWk4RE1BOWk0d2NiTHY5aUhkCmlENnRFOEhuUm1nenBmNTZkb3NZNFAwOTdIZk5oZVVDZ2dFQVcxaGp3bjJ0UDhmSlZtTVg1cDUvbXVTZGhvZHEKb1VPbEZDTVFvQzFlbnAzMnk0MDlqaU0vZVRWckNRMHlUclVYbVBKc2hLQkVRdzhtQnZhamhXWFJBaVZvZDRscwo1ZWpRQ2tpQ0N2QkFKbHIvVUxZYjdBZW5QazJVZlFYaEF1YW9mcW54TERxTnJBeHJ5UTg4OWZNM3pmOU9zY2h1CnRnNk4wd3ptK244ekI2Ukt6bU1KYmJocWxWVUlqS3d1VnpMaUw4TWZwekY2RHZqU1NjQ01PM2lWcitNRHRtQkMKdUNHbEJYenJLL2J0bzZOR3Vnb1ZWc1FBQ3dPczlOYTdWL0FDcVdpNXIyUkJHSURnejJXa0d6cVpoNHkxQytPdgpoZ3BwVE5kM0pTZk9MQWJ5bzQ3alRVL2IvU2g2RE8zazM3cmZLTjEwNkhrTFVtQ0hUV1VQN1g3ZG53PT0KLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K",
+                        "ca": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZRakNDQXlvQ0NRQ3A0RmdWQXNTU0JEQU5CZ2txaGtpRzl3MEJBUXNGQURCak1Rc3dDUVlEVlFRR0V3SkYKVXpFUk1BOEdBMVVFQ0F3SVZtRnNaVzVqYVdFeEVUQVBCZ05WQkFjTUNGWmhiR1Z1WTJsaE1Rd3dDZ1lEVlFRSwpEQU5KVkVreERUQUxCZ05WQkFzTUJGTnBSR2t4RVRBUEJnTlZCQU1NQ0VNeVRrVlVJRU5CTUI0WERURTNNRFV4Ck5URXhNall5TkZvWERUUTBNRGt5T1RFeE1qWXlORm93WXpFTE1Ba0dBMVVFQmhNQ1JWTXhFVEFQQmdOVkJBZ00KQ0ZaaGJHVnVZMmxoTVJFd0R3WURWUVFIREFoV1lXeGxibU5wWVRFTU1Bb0dBMVVFQ2d3RFNWUkpNUTB3Q3dZRApWUVFMREFSVGFVUnBNUkV3RHdZRFZRUUREQWhETWs1RlZDQkRRVENDQWlJd0RRWUpLb1pJaHZjTkFRRUJCUUFECmdnSVBBRENDQWdvQ2dnSUJBSnBJMmttQ2p4bVc2NHlQUjdieTdlOTNFLys3b0VTZFowV3hsQ0FQSi8zbmczamsKSlg4OUFWS0wrZUkzclg0UFYyNTBPSTdkUUdWTU1pWTBUcG9yQ3VFb2plNHVySzdNYnNROFBBKzBNcURDaW5hSgo0VHdyTHR6ODBmYzdPK09LNldobG0wSzh4Smx6L2Q0VnJJTTU2aVJ0MXF3UHhSejUxTHZkOHlVcjBERS9oeTRlCjBDWlhlalZMb2xjVnptam1YaWJyOS9EYW5kRGRuT0tTNGprOW44dy9rbkNkd2YyRjdObFdvZ3RxWGtEaUpVS2MKSDl2a1R3cWJWakt5K3Q2d1Z0cVg2Zms5bXZZbStCSmxwcWJrS285Q3Z5RFlmOFc1dXlUUHpCcWhBVTllWWZSUApMYW00bjlWYWVLK1NEOFhrUTZhZklmckc1ckNOMWxsaHhEMS9xeVQxaUxtdmliN3hRV3F4dDhTOU5QQ1Q5SS9ICllpdlB0UFBneEdmOEU0dldLeUYwMDNGbjRKOW1PYnZtWVNMZWRwdDV2VWxjQUV0dFRxVkRPYlkyKytleXYzb1QKcWFaYndRS2d6b2xzVmI4NzNRbHk3dmFSbjlzeVdOWXNLUU1jSkl0ekZIc0ZMY0Z4K0tLamZNMHBkV1prbjhpQgpqNk9rWFYrT0RiclViZUVHanR4NUlnSjhycHduZjlrVHUzdW5BN0dBNzNpNjNOUHRhd1lVRWVxT3A5by9MMlo3CjZtNXJiUWNDZEFQbnZtYnhaQWlsNGR4WnBwRXlxN3daL1pGRVFsV0VGZ091cWg3bElWUEJ6d2JLblZTVno4aGEKNXd2RjRnNUx1OHV1NURSZFhBQ0h0bzZDWkxOaFJKOEpzRTJPeTFUNlhHTXVyN0MrMnUyWmJmd2pTakFmQWdNQgpBQUV3RFFZSktvWklodmNOQVFFTEJRQURnZ0lCQUE1Zlo1K0NSd25RVEM2TVhjckt1RUkzdzU0Uk5hOWU0VFp2ClFFN2M4WElLaXR5VXJrbUxRRitDeXpvcGlrck1jYTJVZmNDSmlJZlZJUjdQdzRaUDNuN2RaMTBUbGk1UWRObzkKckZZNlNub3VyR21ZQUR0UXc5d1NETWpEYjNDS0xobzM2TnFLY1grc2I2T3lEWHB2Nml2bWdObFlhRjVkVkRGdAozUTJIZWc4WTl4alJHTXNFMUxyNTZNRlVQRjFvUjl1c09MVENSb0dJQUVaM0ZyOEZWWjMwcmlKc1JaV2pVZGt6CmxrazdGRVZvZE03YjJjWTQvVW5iWmZzQStQSkdnYzA2Q0tzMlV1blB2cm5HWlVSalFYMUxPd0FNRG1TVGhqd2oKNENQWlNsalhhSENzR1EyeVIzVmhRcCtFM3N4eTZDSlBRUVZPaWRwMEgvRjNiWG1GOGNDd0NGMElaeWFlZzlvOQoyeVFIOXlNMVNMaFdVdEx6U0pieXJVa3hFcjRmQ2FPc3NjNGdsY1k1d0kyMjJCckE1YjVlL29Wa1RDN2hTYld0CjJUeUx5L3JuOTVkSCs1NnNUa0ZaUDZlTXFDMGNqdmc2am0va3hMTXhlN2dBcVJncWRBNjQ3enpObTFXUUlVNFYKbENuMUVrNlNsMnoxbXI1VE5FVnZuK1NYZlY1S25MZklVa3NORURycEFGQjV2RzZOQnpzb1pIR1liY3VNcUVTLwpZZEFraFlSbkJiM1J6b3ZpVTdQZjFXLy95TlBXS2o2djA0L0hvSmM0VEl1RTkzaEZyK3dTUmRQM3BVWFZDZlVjCi9NRVBDRTlLUTJzdXpjY1NVVWRHb0tVSU0wcTEzaWpNaWs1QTI4bU5Md2IvWkJsL2IzNnFtOXBIVThwUHNzT08KYUFuZnlXWjEKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+                    }
+                }
+            },
+            "eslap://c2netproject/resources/vhost/argo_service": {
+                "spec": "eslap://eslap.cloud/resource/vhost/1_0_0",
+                "name": "eslap://c2netproject/resources/vhost/argo_service",
+                "parameters": {
+                    "vhost": "c2net-service.argo.kumori.cloud"
+                }
+            },
+            "eslap://c2netproject/resources/vhost/argo_service_rc": {
+                "spec": "eslap://eslap.cloud/resource/vhost/1_0_0",
+                "name": "eslap://c2netproject/resources/vhost/argo_service_rc",
+                "parameters": {
+                    "vhost": "c2net-service-rc.argo.kumori.cloud"
+                }
+            },
+            "eslap://iti/resources/volumes/acs_cert_vol/0_0_2": {
+                "spec": "eslap://eslap.cloud/resource/volume/persistent/1_0_0",
+                "name": "eslap://iti/resources/volumes/acs_cert_vol/0_0_2",
+                "parameters": {
+                    "size": "1",
+                    "prefix": "acs_cert_vol"
+                }
+            }
+        }
+    }
+}

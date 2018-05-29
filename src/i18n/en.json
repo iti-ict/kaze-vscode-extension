@@ -1,0 +1,128 @@
+{
+  "menu": {
+    "name":"Control Panel ",
+    "service": {
+      "label": "Service",
+      "form":{
+        "domain": "Domain",
+        "name": "Name",
+        "version": "Version"
+      }
+    },
+  "component": {
+      "label": "Component",
+      "form": {
+        "domain": "Domain",
+        "name": "Name",
+        "version": "Version"
+      }
+    },
+    "roles": {
+      "label": "Roles"
+    },
+    "channels": {
+      "label": "Channels"
+    },
+    "runtime": {
+      "label": "Runtime"
+    },
+    "connectors": {
+      "label": "Connectors"
+    },
+    "uielements": {
+      "label": "UIElements",
+      "form": {
+        "show_hide": "Show/Hide channels"
+      }
+    },
+    "config":{
+      "label":"Configuration"
+    },
+    "settings": {
+      "label": "Settings",
+      "opt": {
+        "changeServ": "Change Aplication Service"
+      }
+    }
+  },
+  "modals":{
+    "heads":{
+      "new": "New",
+      "settings":"Settings"
+    },
+    "roles":{
+      "name":"Role",
+      "labels": {
+        "name": "Name",
+        "comp":"Component",
+        "chcomp": "Choose Component",
+        "res":"Resources",
+        "param":"Parameters",
+        "byPass": "Bypass"
+      }
+    },
+    "connectors": {
+      "labels": {
+        "cons": "Connectors",
+        "chconn": "Choose Connector",
+        "prov": "Provided",
+        "dep": "Depended"
+      }
+    },
+    "components": {
+      "labels": {
+        "runtime": "Runtime",
+        "res": "Resources",
+        "param": "Parameters",
+        "name": "Name",
+        "type": "Type"
+      }
+    },
+    "channels": {
+      "name": "Channel",
+      "labels": {
+        "name": "Name",
+        "type": "Type",
+        "proto": "Protocol",
+        "prov": "Provides",
+        "req": "Requires"
+      }
+    }
+  },
+  "notify":{
+    "invjson": "Invalid JSON, check syntax",
+    "servnotfoud": "Service not found",
+    "cantupd": "Can not update manifest",
+    "cantread": "Can not read manifest"
+  },
+  "validation":{
+    "empty": "Field cannot be empty",
+    "invalidf": "Invalid format",
+    "invalidc": "Contains invalid character",
+    "dupname": "This name is currently in use",
+    "wrongruntime": "Unknown runtime, check the manifest"
+  },
+  "panel":{
+    "selector":{
+      "title":"Select the application service to be displayed",
+      "options":{
+        "services": "Services",
+        "components": "Components"
+      }
+    },
+    "warning":{
+      "title":"Warning",
+      "text": "This change performs cascade modifications on related manifest elements. Do you want to continue?",
+      "buttons": {
+        "accept": "Accept",
+        "deny": "Deny"
+      }
+    },
+    "buttons": {
+      "accept": "Accept",
+      "deny": "Deny",
+      "add":"Add",
+      "close":"Close"
+    }
+  }
+}
